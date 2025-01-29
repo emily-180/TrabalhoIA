@@ -26,7 +26,7 @@ def predict():
     elif output == 'Ruim':
         color_class = 'ruim'
     else:
-        color_class = 'Perigosa'
+        color_class = 'perigosa'
     return render_template("index.html", prediction_text=f"Qualidade do ar: {output}",color_class=color_class)
 
 @app.route("/api", methods=["POST"])
